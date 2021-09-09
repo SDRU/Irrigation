@@ -20,8 +20,8 @@ from serial.tools.list_ports import comports
 
 water_jet_setpoint_high = 30 # the value is in %
 water_jet_setpoint_low = 0 # the value is in %
-time_on = 2.5
-time_off = 2.5
+time_on = 5
+time_off = 5
 
 
 try:
@@ -39,16 +39,16 @@ try:
     # time.sleep(2.5)
     
     
-    for _ in range(1):
+    for _ in range(100):
         set_setpoint(ser, water_jet_setpoint_high) 
         time.sleep(time_on)
-        # for i in range(time_on):
-        #     time.sleep(1)
+        for i in range(time_on):
+            time.sleep(1)
             
         set_setpoint(ser, water_jet_setpoint_low)
         time.sleep(time_off)
-        # for i in range(time_off):
-        #     time.sleep(1)
+        for i in range(time_off):
+            time.sleep(1)
     
     # valuep = read_setpoint(ser)
     # # turn off the jet
