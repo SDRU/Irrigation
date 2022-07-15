@@ -4,5 +4,5 @@ https://www.emerson.com/en-us/catalog/tescom-er5000
 The reaction time to a pressure change is ~2s, it's quite slow.
 
 <br>
-<img src=".Nozzle.jpg" width="400">
+<img src="Nozzle.jpg" width="400">
 <br>
